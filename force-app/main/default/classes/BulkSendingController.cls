@@ -6,6 +6,8 @@ public with sharing class BulkSendingController{
  *    Create a persistant list of group members
  *    Return an ID of the list
  */
+ 
+ 
 @AuraEnabled
 
 public static Id buildList(){
@@ -44,7 +46,6 @@ public static Id buildList(){
     }
 
 
-
 @future(callout=true)    
 /**
  *  bulkSendEnvelopes method
@@ -67,5 +68,7 @@ public static void bulkSendEnvelopes(Id myListId){
             
             // Save bulkStatusId to query status later
             Id myStatusId = myResult.bulkStatusId;
+
+}
 
 }
