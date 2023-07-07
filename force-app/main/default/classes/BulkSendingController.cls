@@ -55,7 +55,7 @@ public static Id buildList(){
 public static void bulkSendEnvelopes(Id myListId){
     
 
-            Id myDocumentId = '06XXXXXXXXXXXXXAQ'; //The id of a document stored in a Salesforce library
+            Id myDocumentId = '0695j00000AI51FAAT'; //The id of a document stored in a Salesforce library
     
             Id myFileId = [SELECT id from ContentVersion where ContentDocumentId = :myDocumentId LIMIT 1].id; // Content version ID of document to send
             // Create the draft bulk envelope. This will have exactly one placeholder bulk recipient

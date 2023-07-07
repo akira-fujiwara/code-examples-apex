@@ -10,7 +10,7 @@ public with sharing class SendEnvelopeWithTabsController {
         new dfsle.Entity(mySourceId));
         // The initiating Salesforce entity
 
-        Id myDocumentId = '06XXXXXXXXXXXXXXAQ'; // The ID of a document stored in a Salesforce library
+        Id myDocumentId = '0695j00000AI51FAAT'; // The ID of a document stored in a Salesforce library
         Id myFileId = [SELECT id from ContentVersion where ContentDocumentId = :myDocumentId LIMIT 1].id;
         
         // Add document to the envelope
